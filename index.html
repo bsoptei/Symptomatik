@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Symptomatik</title>
+  <meta charset="UTF-8">
+  <!--define stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"></link>
+  <!--define target-->
+  <base target="_blank">
+  <!--define script-->
+  <script type="text/javascript" src="js/AudioInterface.js"></script>
+  <script type="text/javascript" src="js/Symptomatik.js"></script>
+  <script type="text/javascript" src="js/ControllerButton.js"></script>
+  <script type="text/javascript" src="js/Parent.js"></script>
+  <script type="text/javascript" src="js/ControllerLine.js"></script>
+  <script type="text/javascript" src="js/PadVisuals.js"></script>
+</head>
+<body onload="Symptomatik.initialize()">
+  <header>
+    <h1>Symptomatik</h1>
+    <h2 id="loaded_project">No project</h2>
+  </header>
+  <main id="main">
+    <article>
+      <div class="wrapper">
+      </div>
+    </article>
+    <aside id="program_menu">
+      <div class="menu_wrapper" id="open_project">
+        <input type="file" name="file" id="file-input" class="input-file">
+        <label for="file-input" class="menu_item">Open project</label>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
